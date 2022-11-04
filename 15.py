@@ -29,3 +29,5 @@ def masdodfokszamolo():
 
 randommasodfoku()
 masdodfokszamolo()
+
+#alma
