@@ -1,0 +1,67 @@
+<style>
+    /* Style the tab content */
+    .tabcontent {
+      display: none;
+      padding: 6px 12px;
+      background-color: crimson;
+    }
+  
+    /* Style the tab links */
+    .tablinks {
+      background-color: #eee;
+      border: none;
+      cursor: pointer;
+      padding: 6px 12px;
+      margin-left: 0px;
+      margin-right: 0px;
+    }
+  
+    /* Style the active tab link */
+    .tablinks:hover,
+    .active {
+      background-color: crimson;
+      border-bottom: 4px solid crimson;
+    }
+  </style>
+  
+  <!-- Create the tabs -->
+  <div>
+    <button class="tablinks" onclick="openTab(event, 'Tab1')">Tab 1</button>
+    <button class="tablinks" onclick="openTab(event, 'Tab2')">Tab 2</button>
+    <button class="tablinks" onclick="openTab(event, 'Tab3')">Tab 3</button>
+  </div>
+  
+  <!-- Tab content -->
+  <div id="Tab1" class="tabcontent">
+    Tab 1 content goes here...
+  </div>
+  
+  <div id="Tab2" class="tabcontent">
+    Tab 2 content goes here...
+  </div>
+  
+  <div id="Tab3" class="tabcontent">
+    Tab 3 content goes here...
+  </div>
+  
+  <!-- JavaScript function to control tab display -->
+  <script>
+    function openTab(evt, tabName) {
+      // Get all elements with class="tabcontent" and hide them
+      var tabcontent = document.getElementsByClassName("tabcontent");
+      for (var i = 0; i < tabcontent.length; i++) {
+        tabcontent[i].style.display = "none";
+      }
+  
+      // Get all elements with class="tablinks" and remove the class "active"
+      var tablinks = document.getElementsByClassName("tablinks");
+      for (var i = 0; i < tablinks.length; i++) {
+        tablinks[i].className = tablinks[i].className.replace(" active", "");
+      }
+  
+      // Show the current tab, and add an "active" class to the button that opened the tab
+      document.getElementById(tabName).style.display = "block";
+      evt.currentTarget.className += " active";
+    }
+  </script>
+  
