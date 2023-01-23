@@ -1,36 +1,34 @@
-from random import randrange
-nevek = []
-cimek = []
-nev = ""
-while nev != "Vége":
-    nev = input("Név:")
-    cim = input("Cím:")
-    nevek.append(nev)
-    cimek.append(cim)
+names = []
+addresses = []
 
-keres = input("Keresendő név:")
-if keres in nevek:
-    print(cimek[nevek.index(keres)])
+while True:
+    name = input("Név:")
+    if name == "Vége":
+        break
+    address = input("Cím: ")
+    names.append(name)
+    addresses.append(address)
 
-uj = input("Név: ")
-if uj not in nevek:
-    nevek.append(uj)
-    cimek.append(input("Cím: "))
+print("Nevek és címek listája:")
+for i in range(len(names)):
+    print(names[i] + ": " + addresses[i])
 
-delet = input("Kitörlendő név:")
-if delet in nevek:
-    cimek.pop(nevek.index(delet))
-    nevek.remove(delet)
+name_to_search = input("Név amit keresünk: ")
 
-list = []
-a = 0
-while a != 5:
-    num = randrange(90)
-    if num not in list:
-        list.append(num)
+for i in range(len(names)):
+    if names[i] == name_to_search:
+        print(name_to_search + " címe:  " + addresses[i])
+        break
     else:
-        a-=1
-    a+=1
-    print(a)
+        print("Name not found in the list.")
 
-print(list)
+while True:
+    name = input("Név:")
+    if name == "Vége":
+        break
+    if name in names:
+        print("Már benne van.")
+    else:
+        address = input("Cím: ")
+        names.append(name)
+        addresses.append(address)
