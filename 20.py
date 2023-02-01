@@ -1,22 +1,20 @@
 n = int(input("Beolvasások száma"))
-for i in range(n):
-
-
+i = 0
+while i!=n:
+    print(n-i,"beolvasás van még.")
     nev = input("Név:")
-    nem = input("Nem:")
+    nem = input("Nem(fiu vagy lany):")
     suly = input("Suly:")
     if nem == "fiu":
         FileF = open("20f.txt", "a", encoding="UTF-8")
-        FileF.write(nev+";"+nem+";"+suly)
+        FileF.write(nev+";"+nem+";"+suly+"\n")
         FileF.close()
+        i += 1
     elif nem == "lany":
         FileL = open("20l.txt", "a", encoding="UTF-8")
-        FileL.write(nev+";"+nem+";"+suly)
+        FileL.write(nev+";"+nem+";"+suly+"\n")
         FileL.close()
-    else:
+        i += 1
+    elif nem != "lany" or nem !="fiu":
         print("nincs ilyen nem")
-        i = i-1
-
-
-
 #név nem suly
