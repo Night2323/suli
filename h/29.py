@@ -8,9 +8,14 @@ fnem = []
 def beolvas(nev,tel,nem):
     a = int(input("Beolvasandó emberek száma:"))
     for i in range(a):
-        nev.append(input("Név:"))
-        tel.append(input("Telefonszám:"))
-        nem.append(input("Nem:"))
+        InNev = input("Név:")
+        if InNev in nev:
+            print("Már benne van.")
+            i = i-1
+        else:
+            nev.append(InNev)
+            tel.append(input("Telefonszám:"))
+            nem.append(input("Nem:"))
     alap(nev,tel,nem)
 
 

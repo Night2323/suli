@@ -1,0 +1,9 @@
+alma;1
+körte;1
+rák;10000000
+hermetikusrákszentiván;76342374892376572985634278562389457
+terák;989
+aslkfkksagh;12387
+554655;adgsdfggggggggggggggggg
+no;yes
+igen;nem
