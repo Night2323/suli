@@ -1,0 +1,13 @@
+Sorszám;Név;Nemzetiség;LegjobbDobás
+2323;Wojciech Nowicki;POL;77.64
+2345;Ivan Cihan;BLR;76.51
+3232;Dilsod Nazarov;TJK;76.39
+1400;Pars Krisztián;HUN;75.49
+2300;Diego del Real;MEX;75.19
+7681;Serghei Marghiev;MDA;74.97
+1276;David Söderberg;FIN;74.64
+0123;Szjarhej Kalamojec;BLR;74.29
+2010;Wagner Domingos;BRA;74.17
+2112;Marcel Lomnický;SVK;74.16
+6566;Jevhen Vinohradov;UKR;73.95
+7670;Amgad Elseify Ashraf;QAT;73.47

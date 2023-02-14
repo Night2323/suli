@@ -1,0 +1,4 @@
+alma;1
+körte;2
+szertartásoskecskeszanatórium;3
+téglalapátolókispályásszakaszisztens;4
