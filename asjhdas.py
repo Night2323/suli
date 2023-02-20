@@ -1,3 +1,3 @@
-n = ["a","c","b"]
-n.sort()
-print(n)
+file = open("test.txt","a",encoding="UTF-8")
+file.write("alma\n")
+file.close()
