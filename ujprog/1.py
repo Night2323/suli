@@ -41,3 +41,17 @@ for i in range(len(nevek)):
         f += 1
         fo += magassagok[i]
 print("Lányok átlagmagassága: ",lo/l," Fiúk átlagmagassága: ",fo/f)
+
+#//180+o os emberek száma
+mo = 0
+for i in range(len(nevek)):
+    if magassagok[i]>=180:
+        mo +=1
+print("180 cm-nél magasabb emberek:",mo)
+
+#//180+os nők
+mlo = 0
+for i in range(len(nevek)):
+    if magassagok[i]>=180 and magassagok[i]:
+        mlo += 1
+print("180 cm-nél magasabb nők:",mlo)
